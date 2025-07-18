@@ -6,7 +6,7 @@ Repo ini dibuat sebagai dokumentasi proses belajar pribadi saya menggunakan **Se
 ## 🚀 Tujuan
 - Memahami dasar-dasar Selenium WebDriver
 - Membangun skrip otomatisasi sederhana
-- Mempelajari praktik automation testing menggunakan bahasa pemrograman (misal: Python / Java)
+- Mempelajari praktik automation testing menggunakan bahasa pemrograman Java
 
 ## 🛠️ Teknologi & Tools
 - Selenium WebDriver
