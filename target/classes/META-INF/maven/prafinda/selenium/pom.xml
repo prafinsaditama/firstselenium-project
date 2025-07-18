@@ -3,6 +3,8 @@
   <groupId>prafinda</groupId>
   <artifactId>selenium</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <!-- Maven dependencies-->
   <dependencies>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
@@ -10,9 +12,17 @@
     <artifactId>selenium-java</artifactId>
     <version>4.34.0</version>
 </dependency>
-  
-  
+
+  <!-- TestNG Dependencies-->
+  <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.11.0</version>
+    <scope>test</scope>
+</dependency>
   </dependencies>
+  
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
