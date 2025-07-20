@@ -12,36 +12,37 @@ public class Selintroduction {
 		WebDriver driver = new ChromeDriver();
 
 		try {
-			driver.get("https://demo.applitools.com/");
+			driver.get("https://sauce-demo.myshopify.com/");
 			System.out.println("[✓] Website dibuka");
 			System.out.println("[✓] Title is: " + driver.getTitle());
 		} catch (Exception e) {
 			System.out.println("[✗] Gagal membuka website: " + e.getMessage());
 		}
+		
+		// Login user
+		try {
+			driver.findElement(By.xpath("//*[@id=\"customer_login_link\"]")).click();
+			System.out.println("[✓] Tombol Login berhasil diklik");
+		} catch (Exception e) {
+			System.out.println("[✗] Gagal klik tombol Login: " + e.getMessage());
+		}
 
 		try {
-			driver.findElement(By.xpath("//*[@id=\"username\"]")).sendKeys("prafindasutan");
+			driver.findElement(By.xpath("//*[@id=\"customer_email\"]")).sendKeys("prafindasutan@gmail.com");
 			System.out.println("[✓] Username berhasil diisi");
 		} catch (Exception e) {
 			System.out.println("[✗] Gagal mengisi username: " + e.getMessage());
 		}
 
 		try {
-			driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("okeberhasil");
+			driver.findElement(By.xpath("//*[@id=\"customer_password\"]")).sendKeys("okeberhasil");
 			System.out.println("[✓] Password berhasil diisi");
 		} catch (Exception e) {
 			System.out.println("[✗] Gagal mengisi password: " + e.getMessage());
 		}
 
 		try {
-			driver.findElement(By.xpath("/html/body/div/div/form/div[3]/div[1]/label/input")).click();
-			System.out.println("[✓] Checkbox berhasil diklik");
-		} catch (Exception e) {
-			System.out.println("[✗] Gagal klik checkbox: " + e.getMessage());
-		}
-
-		try {
-			driver.findElement(By.xpath("//*[@id=\"log-in\"]")).click();
+			driver.findElement(By.xpath("//*[@id=\"customer_login\"]/div[5]/input")).click();
 			System.out.println("[✓] Tombol Login berhasil diklik");
 		} catch (Exception e) {
 			System.out.println("[✗] Gagal klik tombol Login: " + e.getMessage());
