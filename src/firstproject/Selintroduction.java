@@ -12,6 +12,7 @@ public class Selintroduction {
 		WebDriver driver = new ChromeDriver();
 
 		try {
+			driver.manage().window().maximize(); 
 			driver.get("https://sauce-demo.myshopify.com/");
 			System.out.println("[✓] Website dibuka");
 			System.out.println("[✓] Title is: " + driver.getTitle());
@@ -28,14 +29,14 @@ public class Selintroduction {
 		}
 
 		try {
-			driver.findElement(By.xpath("//*[@id=\"customer_email\"]")).sendKeys("prafindasutan@gmail.com");
+			driver.findElement(By.xpath("//*[@id=\"customer_email\"]")).sendKeys("prafindoe@gmail.com");
 			System.out.println("[✓] Username berhasil diisi");
 		} catch (Exception e) {
 			System.out.println("[✗] Gagal mengisi username: " + e.getMessage());
 		}
 
 		try {
-			driver.findElement(By.xpath("//*[@id=\"customer_password\"]")).sendKeys("okeberhasil");
+			driver.findElement(By.xpath("//*[@id=\"customer_password\"]")).sendKeys("Kemanggisan1!");
 			System.out.println("[✓] Password berhasil diisi");
 		} catch (Exception e) {
 			System.out.println("[✗] Gagal mengisi password: " + e.getMessage());
@@ -54,8 +55,10 @@ public class Selintroduction {
 			System.out.println("[✗] Gagal mendapatkan status URL: " + e.getMessage());
 		}
 
+		/*
 		driver.quit();
 		System.out.println("[✓] Browser ditutup");
+		*/
 
 	}
 }

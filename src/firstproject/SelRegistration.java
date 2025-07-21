@@ -13,6 +13,7 @@ public class SelRegistration {
 		try {
 			// Buka halaman register
 			try {
+				driver.manage().window().maximize();
 				driver.get("https://sauce-demo.myshopify.com/account/register");
 				System.out.println("[✓] Website register dibuka");
 			} catch (Exception e) {
@@ -35,7 +36,7 @@ public class SelRegistration {
 
 			// Isi First Name
 			try {
-				driver.findElement(By.name("customer[first_name]")).sendKeys("John");
+				driver.findElement(By.xpath("//input[@type='text' and @name='customer[first_name]']")).sendKeys("John");
 				System.out.println("[✓] First Name berhasil diisi");
 			} catch (Exception e) {
 				System.out.println("[✗] Gagal mengisi First Name: " + e.getMessage());
