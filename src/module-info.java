@@ -9,4 +9,5 @@ module firstproject {
 	requires org.seleniumhq.selenium.firefox_driver;
 	requires org.seleniumhq.selenium.api;
 	requires org.seleniumhq.selenium.support;
+	requires org.apache.commons.io;
 }
