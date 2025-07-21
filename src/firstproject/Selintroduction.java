@@ -37,7 +37,7 @@ public class Selintroduction {
         System.setProperty("webdriver.chrome.driver", "/Users/Prafinda Sutan A/Documents/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
-        try {
+        try { 
             driver.manage().window().maximize();
             driver.get("https://www.saucedemo.com/");
             System.out.println("[✓] Website dibuka");

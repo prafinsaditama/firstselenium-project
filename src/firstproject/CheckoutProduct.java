@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CheckoutProduct {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 
 		System.setProperty("webdriver.chrome.driver", "/Users/Prafinda Sutan A/Documents/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();

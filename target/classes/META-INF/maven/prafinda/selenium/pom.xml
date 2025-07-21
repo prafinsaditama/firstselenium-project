@@ -4,7 +4,7 @@
   <artifactId>selenium</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
-  <!-- Maven dependencies-->
+  <!-- Maven dependencies--> 
   <dependencies>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
